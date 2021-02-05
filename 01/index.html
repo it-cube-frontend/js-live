@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+  </body>
+  <script>
+    const canvasElement = document.getElementById('canvas');
+    const ctx = canvasElement.getContext('2d');
+
+    ctx.fillStyle = 'lightgreen';
+    ctx.fillRect(10, 10, 130, 130);
+
+    ctx.strokeStyle = 'blue';
+    ctx.strokeRect(0, 0, 150, 150);
+
+    ctx.clearRect(0, 0, 200, 200);
+
+    // font
+    // textAlign
+    // textBaseline
+    ctx.strokeRect(10, 10, 150, 30);
+
+    ctx.font = 'bold 30px Tahoma';
+    ctx.textBaseline = 'top';
+    ctx.textAlign = 'center';
+    ctx.fillText('Привет', 85, 10);
+    ctx.fillText('всем из canvas', 85, 50);
+
+  </script>
+</html>
